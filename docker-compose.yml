@@ -1,0 +1,9 @@
+services:
+  clash-for-linux:
+    image: clash-for-linux
+    container_name: clash-for-linux-1
+    ports:
+      - "9090:9090"
+      - "7890:7890"
+    command: bash -c "bash start.sh && tail -f /dev/null"
+  
